@@ -20,9 +20,14 @@
     <header>
       <div class="header-brand">
         <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V10z" fill="white"/>
-          <path d="M9 21v-6h6v6" fill="rgba(255,255,255,0.2)"/>
+          <!-- 屋頂與主體：使用帶有透明度的白色，營造質感 -->
+          <path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V10z" fill="rgba(255,255,255,0.9)"/>
+          <!-- 窗戶/門：改用深色調與背景呼應，增加細節 -->
+          <path d="M9 21v-6h6v6" fill="var(--forest)" opacity="0.3"/>
+          <!-- 裝飾葉子：亮綠色點綴 -->
           <path d="M12 3c.5-1.5 2-3 4-3 1.5 0 3 1.5 3 3s-1.5 3-3 3c-2 0-3.5-1.5-4-3z" fill="var(--mint)"/>
+          <!-- 額外高光線條 -->
+          <path d="M3 10l9-7 9 7" fill="none" stroke="white" stroke-width="0.5"/>
         </svg>
         <div class="header-titles">
           <h1>儲互社數位服務網</h1>
