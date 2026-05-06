@@ -19,14 +19,14 @@
     <!-- 頁首 -->
     <header>
       <div style="display: flex; align-items: center; gap: 12px;">
-        <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--forest)">
+        <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
           <path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V10z"/>
-          <path d="M9 21v-6h6v6" fill="var(--mint)" opacity="0.6"/>
-          <path d="M12 3c.5-1.5 2-3 4-3 1.5 0 3 1.5 3 3s-1.5 3-3 3c-2 0-3.5-1.5-4-3z" fill="#40916c"/>
+          <path d="M9 21v-6h6v6" fill="rgba(255,255,255,0.3)"/>
+          <path d="M12 3c.5-1.5 2-3 4-3 1.5 0 3 1.5 3 3s-1.5 3-3 3c-2 0-3.5-1.5-4-3z" fill="var(--mint)"/>
         </svg>
         <div>
           <h1 style="font-size: 18px;">儲互社數位服務網</h1>
-          <div style="font-size: 10px; color: var(--forest-l); opacity: 0.8; margin-top: 2px;">{{ state.clubName }}</div>
+          <div style="font-size: 10px; color: var(--mint); opacity: 0.8; margin-top: 2px;">{{ state.clubName }}</div>
         </div>
       </div>
       <div class="user-box" @click="state.showAccountMenu = true">
