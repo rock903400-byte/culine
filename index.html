@@ -18,15 +18,15 @@
   <div id="app" v-cloak>
     <!-- 頁首 -->
     <header>
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--forest)">
           <path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V10z"/>
-          <path d="M9 21v-6h6v6" fill="rgba(255,255,255,0.3)"/>
-          <path d="M12 3c.5-1.5 2-3 4-3 1.5 0 3 1.5 3 3s-1.5 3-3 3c-2 0-3.5-1.5-4-3z" fill="var(--mint)"/>
+          <path d="M9 21v-6h6v6" fill="var(--mint)" opacity="0.6"/>
+          <path d="M12 3c.5-1.5 2-3 4-3 1.5 0 3 1.5 3 3s-1.5 3-3 3c-2 0-3.5-1.5-4-3z" fill="#40916c"/>
         </svg>
         <div>
           <h1 style="font-size: 18px;">儲互社數位服務網</h1>
-          <div style="font-size: 10px; color: var(--mint); opacity: 0.8; margin-top: 2px;">{{ state.clubName }}</div>
+          <div style="font-size: 10px; color: var(--forest-l); opacity: 0.8; margin-top: 2px;">{{ state.clubName }}</div>
         </div>
       </div>
       <div class="user-box" @click="state.showAccountMenu = true">
@@ -69,10 +69,10 @@
         </div>
 
         <div class="card">
-          <div class="card-title">🤝 我們的理念</div>
+          <div class="card-title">🌱 關於我們的初心</div>
           <p style="font-size:14px; color:var(--text-light); line-height:1.7;">
-            「自助互助」是我們守護彼此不變的承諾。<br><br>
-            透過數位服務網，讓您隨時掌握個人財務脈動，看見每一分資產背後的安心與踏實。在邁向經濟自主的道路上，儲蓄互助社將始終與您並肩同行，成為您最穩健的後盾。
+            生活不該只有生存，還要能看見選擇的自由。<br><br>
+            「自助互助」是我們給彼此最溫暖的承諾。透過數位隨身服務，讓你隨時看見自己的積累與成長。在這裡，儲蓄不只是數字，更是你追求夢想的底氣。在實踐理想的路上，儲互社是你最靠譜的夥伴，讓我們一起定義更自在的生活方式。
           </p>
         </div>
       </div>
