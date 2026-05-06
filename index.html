@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <title>儲互社數位服務網</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏦</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%231b4332%22><path d=%22M3 10l9-7 9 7v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V10z%22/><path d=%22M9 21v-6h6v6%22 fill=%22%23ffffff%22/><path d=%22M12 3c.5-1.5 2-3 4-3 1.5 0 3 1.5 3 3s-1.5 3-3 3c-2 0-3.5-1.5-4-3z%22 fill=%22%2340916c%22/></svg>">
   
   <!-- SDK 與 框架 -->
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
@@ -18,9 +18,16 @@
   <div id="app" v-cloak>
     <!-- 頁首 -->
     <header>
-      <div>
-        <h1>🏦 儲互社數位服務網</h1>
-        <div style="font-size: 10px; color: var(--mint); opacity: 0.8; margin-top: 2px;">{{ state.clubName }}</div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+          <path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V10z"/>
+          <path d="M9 21v-6h6v6" fill="rgba(255,255,255,0.3)"/>
+          <path d="M12 3c.5-1.5 2-3 4-3 1.5 0 3 1.5 3 3s-1.5 3-3 3c-2 0-3.5-1.5-4-3z" fill="var(--mint)"/>
+        </svg>
+        <div>
+          <h1 style="font-size: 18px;">儲互社數位服務網</h1>
+          <div style="font-size: 10px; color: var(--mint); opacity: 0.8; margin-top: 2px;">{{ state.clubName }}</div>
+        </div>
       </div>
       <div class="user-box" @click="state.showAccountMenu = true">
         <div class="user-avatar">
@@ -64,8 +71,8 @@
         <div class="card">
           <div class="card-title">🤝 我們的理念</div>
           <p style="font-size:14px; color:var(--text-light); line-height:1.7;">
-            「自助互助」不只是核心精神，更是我們守護彼此的堅定承諾。<br><br>
-            透過行動秘書的即時服務，讓您隨時掌握財務脈動，感受每一分資產背後的溫度與用心。在追求經濟自主的旅程中，儲蓄互助社將始帶與您攜手並肩，匯聚成最穩健的安定力量。
+            「自助互助」是我們守護彼此不變的承諾。<br><br>
+            透過數位服務網，讓您隨時掌握個人財務脈動，看見每一分資產背後的安心與踏實。在邁向經濟自主的道路上，儲蓄互助社將始終與您並肩同行，成為您最穩健的後盾。
           </p>
         </div>
       </div>
